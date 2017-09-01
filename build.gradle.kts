@@ -1,11 +1,10 @@
 buildscript {
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.4-eap-69")
-        classpath("org.jetbrains.kotlin:kotlin-sam-with-receiver:1.1.4-eap-69")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.1.4-3")
+        classpath("org.jetbrains.kotlin:kotlin-sam-with-receiver:1.1.4-3")
     }
 
     configure(listOf(repositories, project.repositories)) {
-        maven { url = uri("http://dl.bintray.com/kotlin/kotlin-dev/") }
         jcenter()
     }
 }
@@ -21,7 +20,7 @@ samWithReceiver {
 
 dependencies {
     "compile"(gradleKotlinDsl())
-    "compile"(kotlin("stdlib", version = "1.1.4-eap-69"))
+    "compile"(kotlin("stdlib", version = "1.1.4-3"))
 }
 
 fun Project.`samWithReceiver`(configure: org.jetbrains.kotlin.samWithReceiver.gradle.SamWithReceiverExtension.() -> Unit) =
