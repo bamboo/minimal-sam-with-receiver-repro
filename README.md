@@ -7,8 +7,8 @@ Notice it compiles cleanly from the command line:
     ./gradlew assemble
 
 But IntelliJ IDEA still doesn't enable the _sam-with-receiver_
-behaviour for `Action<T>` blocks:
+behaviour for `Action<T>` blocks within the `buildSrc` project:
 
-![IntelliJ IDEA screenshot](./screenshot.png)
+![IntelliJ IDEA screenshot](./buildSrc-screenshot.png)
 
 
